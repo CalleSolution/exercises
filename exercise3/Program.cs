@@ -10,8 +10,9 @@ namespace exercise3
             string förnamn = Console.ReadLine();
             System.Console.Write("Skriv in ditt efternamn: ");
             string efternamn = Console.ReadLine();
-            
+
             Console.WriteLine("Hej " + förnamn + " " + efternamn);
+            System.Console.WriteLine("Ha en fin dag!");
         }
     }
 }
