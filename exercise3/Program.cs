@@ -6,13 +6,25 @@ namespace exercise3
     {
         static void Main(string[] args)
         {
+
+            string förnamn = "";
+            string efternamn = "";
+            try{
+                try{
             System.Console.Write("Skriv in ditt förnamn: ");
-            string förnamn = Console.ReadLine();
+            förnamn = Console.ReadLine();
             System.Console.Write("Skriv in ditt efternamn: ");
-            string efternamn = Console.ReadLine();
+            efternamn = Console.ReadLine();
+            }
+            catch{
+                throw new Exception("Användaren matade in fel tecken");
+            }
 
             Console.WriteLine("Hej " + förnamn + " " + efternamn);
             System.Console.WriteLine("Ha en fin dag!");
+            }catch(Exception e){
+                System.Console.WriteLine(e);
+            }
         }
     }
 }
