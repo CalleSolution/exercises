@@ -61,7 +61,7 @@ namespace exercise13
             }catch (Exception e){
                 System.Console.WriteLine(e);
             }
-            }while (true;
+            }while (true);
         }
     }
 }
